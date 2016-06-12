@@ -1,4 +1,4 @@
-print '0. csvToDict'
+# print '0. csvToDict'
 
 def boolean(string):
     if string=="True":
@@ -29,4 +29,4 @@ def csvToDict (fileName): #Will produce a dictionary
     output["titles"]=titles
     return output
 
-print csvToDict("sessions.csv")
+# print csvToDict("sessions.csv")
