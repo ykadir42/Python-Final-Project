@@ -21,7 +21,7 @@ def csvToDict (fileName): #Will produce a dictionary
         curDict={}
         while pos<len(elementsList):
             try:
-                curDict[titles[pos]]=float(elementsList[pos])
+                curDict[titles[pos]]=int(elementsList[pos])
             except ValueError:
                 curDict[titles[pos]]=boolean(elementsList[pos])
             pos+=1
