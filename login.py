@@ -19,8 +19,12 @@ password = fromClient["password"].value
 if "login" in fromClient:
     if sessID in passwordDict:
         if password==passwordDict[sessID]['password']:
-            output=""
-            redirect='<meta http-equiv="refresh" content="1; url=http://lisa.stuy.edu/~jawadul.kadir/project/game.py?sessID='+sessID+'">'
+            output='''Login Successful
+            <form action=game.py method="POST">
+            <input type="hidden" value="'''+sessID+'''">
+            <input type="submit" value=continue>
+            </form>'''
+            redirect=''
         else:
             output='Login Failed'
             redirect='<meta http-equiv="refresh" content="3; url=http://lisa.stuy.edu/~jawadul.kadir/project/login.html" >'
