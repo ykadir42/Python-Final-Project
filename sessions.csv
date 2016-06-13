@@ -1,1 +1,1 @@
-sessID,password,player,player0,player1,player2,player3,0Class,1Class,2Class,3Class,0Loc,1Loc,2Loc,3Loc,0Health,1Health,2Health,3Health,0Ammo,1Ammo,2Ammo,3Ammo
+sessID,password,player,initiated,player0,player1,player2,player3,0Class,1Class,2Class,3Class,0Loc,1Loc,2Loc,3Loc,0Health,1Health,2Health,3Health,0Ammo,1Ammo,2Ammo,3Ammo,vaultProgress,gateProgress,managerProgress,corridorProgress,alert,0Sentry,1Sentry,2Sentry,3Sentry,points,0Bag,1Bag,2Bag,3Bag,0Kit,1Kit,2Kit,3Kit,0Downs,1Downs,2Downs,3Downs
