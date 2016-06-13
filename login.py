@@ -21,7 +21,7 @@ if "login" in fromClient:
         if password==passwordDict[sessID]['password']:
             output='''Login Successful
             <form action=game.py method="POST">
-            <input type="hidden" value="'''+sessID+'''">
+            <input type="hidden" name="sessID" value="'''+sessID+'''">
             <input type="submit" value=continue>
             </form>'''
             redirect=''
@@ -46,5 +46,5 @@ else:
 
 print htmlFunctions.htmlSetup()
 print htmlFunctions.headSetup("Verifying...", redirect)
-print htmlFunctions.element( True, 0, 'body', 'style="background-color:black;"', htmlFunctions.element( False, 1, 'h1', 'style="color:white;"', output))
+print htmlFunctions.element( True, 0, 'body', '', htmlFunctions.element( False, 1, 'h1', '', output))
 print htmlFunctions.html_end()
