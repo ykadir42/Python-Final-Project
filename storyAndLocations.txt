@@ -1,0 +1,117 @@
+Choose a class:
+Technician: Explosives
+Silent Drill
+Sentry Gun
+Enforcer: Ammo Bag
+Silent Saw
+Increased health
+Mastermind: Health Kit
+Intimidation
+Infinite Cable Ties
+Ghost: EMC Jammer
+Silenced Weapon
+Lockpick without drill
+
+NEXT
+
+Here’s the plan:
+Find the thermal drill.
+Place the thermal drill in front of the vault door.
+Assemble and activate the thermal drill.
+Finish the drilling (10 turns).
+Drill, saw, C4, or use the key to open a cage door within the vault.
+Secure 1 bag of money
+Escape.
+You may take either the LOUD or STEALTH route.
+NEXT
+
+CLASS: ________
+HEALTH:________
+AMMO:_________
+LOCATION: _______
+You are standing outside of the bank. 
+What do you do?
+Go into the bank through the front door.
+Go around to the back door.
+Start heist!
+Leave. (ends game)
+
+NEXT
+
+CLASS: ________
+HEALTH:________
+AMMO:_________
+LOCATION: _______
+
+If 1. Go into the bank through the front door.
+(Update location)  There are # civilians and # security guards.
+(Go to a different room) (Update Location, display rooms that you can enter, and also check room)
+Check room (if this is chosen, display description of room)
+Go back out and Start Heist!(choice is only available in rooms WAITING AREA and OFFICE AREA.)(starts heist!)
+(basically scouting the entire place)
+
+If 2.Go around to the back door.
+(update location) The back entrance is open.
+(locations)
+Go in. (seen by security and player is unarmed (hasnt started heist), game over)
+Wait. (security guard appears, 
+Start Heist! (starts heist)
+(stealthier approach)
+
+If 3. Start Heist!
+You equip your gear and begin the heist! (this goes for anytime the start heist option is chosen.)
+
+NEXT
+
+Start Heist! phase:
+(always list out rooms you can move into)
+
+The guards are not yet alerted. 
+Shoot them. (guards are alerted, police are on their way. Start randomization stuff)
+Disable cameras. (cameras are disabled. Can go into rooms without being spotted.)
+Threaten. (if class is mastermind, success. Otherwise, failure and police are on their way.)
+
+NEXT
+Either:
+	The guards have been alerted. The police are on their way. 
+Defend! (enter shooting/point n’ click minigame)
+Set sentry.
+
+Or:
+	The guards have not been alerted.
+Tie up guard.
+Place thermal drill. (starts alert and progress)
+
+NEXT (during progress is loading there will be random chances of a guard spotting the player or police being alerted by a civilian. Also, players can walk around the map to have random chances of  finding extra cash.)
+	….(after progress is complete) The vault is open. Grab the money.
+Take money(you take the money)
+Dont take money(???? What are you doing? TAKE THE MONEY)
+
+NEXT 
+(higher chance of guard or civilian spotting you and alerting the police)
+GO GO GO
+Run for the VAN(minigame?)
+
+NEXT
+You reach the VAN. Heist complete!
+You earned _________(random number from 5,000-10,000, +any extra money earned)!
+Submit score (?)
+Play Again
+
+
+LOCATIONS: (location#) for each, list out the ones adjacent to it as an option to move to. 
+MAIN ENTRANCE(2 cameras)
+CUSTOMER WAITING AREA (3 cameras)
+TELLER AREA(1 camera)
+OFFICE AREA(2 cameras)
+ACCESS CORRIDOR
+MANAGERS OFFICE(1 camera)
+SECURITY ROOM(camera display)
+ROOF ACCESS
+VAULT ACCESS
+VAULT(1 camera)
+PARKING LOT
+VAN
+STAFF ENTRANCE (1 camera)
+BACK ENTRANCE
+ROOF(1 camera)
