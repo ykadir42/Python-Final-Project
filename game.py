@@ -1,21 +1,30 @@
 #! /usr/bin/python
-import cgi
+
 import cgitb
 cgitb.enable()
 
-MAINENTRANCE = "Go to CUSTOMER WAITING AREA"
-CUSTOMERWAITINGAREA = "Go to TELLER AREA, VAULT ACCESS, OFFICE AREA, ACCESS CORRIDOR, MAIN ENTRANCE"
-TELLERAREA = "Go to VAULT ACCESS, CUSTOMER WAITING AREA"
-OFFICEAREA = "Go to CUSTOMER WAITING AREA, ROOF ACCESS, "
-ACCESS_CORRIDOR = "Go to VAULT ACCESS, CUSTOMER WAITING AREA"
-MANAGERS_OFFICE = "Go to OFFICE AREA"
-SECURITY_ROOM = "Go to ROOF ACCESS"
-ROOF_ACCESS = "Go to ROOF"
-VAULT_ACCESS = "Go to VAULT, CUSTOMER WAITING AREA, TELLER AREA"
-VAULT = "Go to VAULT ACCESS"
-PARKING_LOT = "Go to BACK ENTRANCE"
-STAFF_ENTRANCE = "Go to VAULT ACCESS, CUSTOMER WAITING AREA"
-BACK_ENTRANCE = "Go to ROOF ACCESS, SECURITY ROOM"
-ROOF = "Go to ROOF ACCESS"
-VAN = "Heist complete!"
+import cgi
+fromClient = cgi.FieldStorage()
 
+import htmlFunctions
+import csvToDict
+import dictToCsv
+import addAccount
+
+print 'content-type: text/html\n'
+
+sessionData=csvToDict.csvToDict('sessions.csv')
+sessID=fromClient['sessID'].value
+playerList=['player0','player1','player2','player3']
+hiddenForm=htmlFunctions.element(False,1,"input",'type="hidden" name="sessID" value="'+sessID+'"','')
+
+print htmlFunctions.htmlSetup()
+print htmlFunctions.headSetup('Payday',"")
+for player in playerList:
+    if sessionData[sessID][player]=="":
+        output="Name "+player+" and give them a class <br>"+htmlFunctions.element(True,0,'form','action="game.py" method="POST"',
+        "Name: "+htmlFunctions.element(False,1,'input','name='+player,"")+ hiddenForm+'<br>' +
+        htmlFunctions.element(False,1,'input','type=submit',"")
+        )
+print htmlFunctions.bodySetup(output)
+print htmlFunctions.html_end()
