@@ -20,7 +20,7 @@ if "login" in fromClient:
     if sessID in passwordDict:
         if password==passwordDict[sessID]['password']:
             output=""
-            redirect='<meta http-equiv="refresh" content="1; url=http://lisa.stuy.edu/~jawadul.kadir/project/game.py" >'
+            redirect='<meta http-equiv="refresh" content="1; url=http://lisa.stuy.edu/~jawadul.kadir/project/game.py?sessID='+sessID+'">'
         else:
             output='Login Failed'
             redirect='<meta http-equiv="refresh" content="3; url=http://lisa.stuy.edu/~jawadul.kadir/project/login.html" >'
